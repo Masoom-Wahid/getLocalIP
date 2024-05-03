@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Send Request Example</title>
+</head>
+<body>
+  <button onclick="sendRequest()">Send Request</button>
+
+  <script>
+	function sendRequest() {
+	  fetch('http://89.117.146.3/masoom/eaf/api/core/getProducts/', {
+	    method: 'GET',
+	    headers: {
+	      'Content-Type': 'application/json'
+	    }
+	  })
+	  .then(response => response.json())
+	  .then(data => {
+	    console.log('Response:', data);
+	    // Handle the response data as needed
+	  })
+	  .catch(error => {
+	    console.error('Error:', error);
+	    // Handle error cases
+	  });
+	}
+  </script>
+</body>
+</html>
