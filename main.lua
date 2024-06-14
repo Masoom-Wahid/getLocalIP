@@ -43,5 +43,4 @@ print(type(res))
 local this = res["ip"]
 print("this")
 print(this)
-local main_div = get("maindiv")
-main_div.set_contents(this)
+get("h1").set_contents(this)
