@@ -26,7 +26,7 @@
 local res = fetch({
     url = "https://api.ipify.org?format=json",
     method="GET",
-    headers = { ["Content-Type"] = "application/json" }
+    headers = { ["Content-Type"] = "application/json" },
     body = '{ "test": ' .. test .. '}'
 })
 print(res)
