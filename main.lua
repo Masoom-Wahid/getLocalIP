@@ -22,6 +22,7 @@
 --     method="GET",
 --     headers = { ["Content-Type"] = "application/json" }
 -- })
+print("hi")
 
 local res = fetch({
     url = "https://api.ipify.org?format=json",
@@ -31,7 +32,10 @@ local res = fetch({
 print("first")
 print(res)
 print("second")
+print(res["ip"])
 print(res[0])
 print("third")
+print("fourth")
+print(res.ip)
 local main_div = get("maindiv")
 main_div.set_contents(res["ip"])
