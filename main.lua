@@ -17,10 +17,17 @@
 -- w = Window.new{x=10, y=20}
 
 
+-- local res = fetch({
+--     url = "https://api.ipify.org?format=json",
+--     method="GET",
+--     headers = { ["Content-Type"] = "application/json" }
+-- })
+
 local res = fetch({
     url = "https://api.ipify.org?format=json",
     method="GET",
     headers = { ["Content-Type"] = "application/json" }
+    body = '{ "test": ' .. test .. '}'
 })
 print(res)
 local main_div = get("maindiv")
