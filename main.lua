@@ -28,7 +28,10 @@ local res = fetch({
     method="GET",
     headers = { ["Content-Type"] = "application/json" }
 })
+print("first")
 print(res)
-print(res["ip"])
+print("second")
+print(res[0])
+print("third")
 local main_div = get("maindiv")
 main_div.set_contents(res["ip"])
