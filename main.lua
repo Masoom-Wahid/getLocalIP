@@ -20,6 +20,6 @@
 local res = fetch({
     url = "https://api.ipify.org?format=json",
 })
-
+print(res)
 local main_div = get("maindiv")
 main_div.set_contents(res.ip)
