@@ -43,4 +43,6 @@ print(type(res))
 local this = res["ip"]
 print("this")
 print(this)
+local p = get("p")
+p.set_contents("another test")
 get("h1").set_contents(this)
