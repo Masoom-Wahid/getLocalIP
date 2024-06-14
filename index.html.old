@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Index</title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+  <div><span id="main-div">Waiting</span></div>
+  <script src="ip.js"></script>
+</body>
+</html>
